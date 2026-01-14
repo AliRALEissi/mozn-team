@@ -51,15 +51,3 @@
 - **GitHub Pages**
 
 ---
-
-## 📁 هيكلة المشروع
-
-```text
-/
-├─ index.html
-├─ README.md
-├─ images/
-│  ├─ logo.jpg
-│  ├─ ALI.png
-│  ├─ Abdulrahman.png
-│  └─ NAWAF.png
