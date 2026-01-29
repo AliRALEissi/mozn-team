@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/images/logo.jpg" type="image/x-icon">
-    <title>فريق مُزن  S5 | من نحن</title>
+    <title>فريق مُزن S5 | من نحن</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        :root {
+        
+         :root {
             --primary: #1f8fa3;
             --secondary: #4fb3c2;
             --dark: #0f172a;
             --light: #f8fafc;
             --accent: #00d4ff;
         }
-
-        html, body {
+        
+        html,
+        body {
             direction: rtl;
             text-align: right;
         }
-
+        
         body {
             font-family: 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: var(--light);
             line-height: 1.9;
             color: #333;
         }
-
         /* Smooth scrolling */
+        
         html {
             scroll-behavior: smooth;
         }
-
         /* ============ NAVBAR ============ */
+        
         .navbar {
             background: rgba(15, 23, 42, 0.95);
             backdrop-filter: blur(10px);
@@ -48,39 +50,41 @@
             z-index: 1000;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
         }
-
+        
         .nav-container {
-               max-width: 1200px;
-              margin: 0 auto;
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              padding: 0 2rem;
-              direction: rtl; /* هذا الأساس */
-            }
-
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            direction: rtl;
+            /* هذا الأساس */
+        }
+        
         .logo {
-                display: flex;
-                align-items: center;
-                gap: 0.6rem;
-                font-size: 1.4rem;
-                font-weight: 700;
-                color: white;
-                text-decoration: none;
-                flex-direction: row; /* صورة ثم نص */
-                             }
-
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            flex-direction: row;
+            /* صورة ثم نص */
+        }
+        
         .logo:hover {
             color: var(--accent);
             transform: scale(1.05);
         }
-
+        
         nav ul {
             list-style: none;
             display: flex;
             gap: 2.5rem;
         }
-
+        
         nav a {
             color: white;
             text-decoration: none;
@@ -89,7 +93,7 @@
             transition: color 0.3s ease;
             font-size: 1.1rem;
         }
-
+        
         nav a::after {
             content: '';
             position: absolute;
@@ -100,16 +104,16 @@
             background: var(--accent);
             transition: width 0.3s ease;
         }
-
+        
         nav a:hover {
             color: var(--accent);
         }
-
+        
         nav a:hover::after {
             width: 100%;
         }
-
         /* ============ HERO SECTION ============ */
+        
         .hero {
             min-height: 100vh;
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
@@ -122,7 +126,7 @@
             position: relative;
             overflow: hidden;
         }
-
+        
         .hero::before {
             content: '';
             position: absolute;
@@ -134,7 +138,7 @@
             left: -100px;
             animation: float 6s ease-in-out infinite;
         }
-
+        
         .hero::after {
             content: '';
             position: absolute;
@@ -146,19 +150,24 @@
             right: -50px;
             animation: float 8s ease-in-out infinite reverse;
         }
-
+        
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(20px); }
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(20px);
+            }
         }
-
+        
         .hero-content {
             position: relative;
             z-index: 10;
             max-width: 900px;
             animation: slideUp 0.8s ease-out;
         }
-
+        
         @keyframes slideUp {
             from {
                 opacity: 0;
@@ -169,21 +178,21 @@
                 transform: translateY(0);
             }
         }
-
+        
         .hero h1 {
             font-size: clamp(2.5rem, 8vw, 4.5rem);
             font-weight: 700;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
-
+        
         .hero .lead {
             font-size: clamp(1.1rem, 4vw, 1.5rem);
             opacity: 0.95;
             line-height: 1.8;
             margin-bottom: 2rem;
         }
-
+        
         .cta-button {
             display: inline-block;
             padding: 1rem 2.5rem;
@@ -198,21 +207,21 @@
             border: none;
             font-size: 1.1rem;
         }
-
+        
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
             background: var(--accent);
             color: var(--dark);
         }
-
         /* ============ ABOUT SECTION ============ */
+        
         .about-section {
             padding: 6rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
-
+        
         .section-title {
             color: var(--primary);
             font-weight: 700;
@@ -223,7 +232,7 @@
             display: inline-block;
             width: 100%;
         }
-
+        
         .section-title::after {
             content: '';
             display: block;
@@ -233,39 +242,39 @@
             margin: 1rem auto 0;
             border-radius: 2px;
         }
-
+        
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
         }
-
+        
         .about-text h3 {
             font-size: 1.8rem;
             color: var(--primary);
             margin-bottom: 1rem;
             font-weight: 700;
         }
-
+        
         .about-text p {
             font-size: 1.05rem;
             color: #555;
             margin-bottom: 1.5rem;
             line-height: 1.9;
         }
-
+        
         .about-icon {
             text-align: center;
             font-size: 8rem;
             opacity: 0.15;
         }
-
+        
         .feature-list {
             list-style: none;
             margin-top: 2rem;
         }
-
+        
         .feature-list li {
             padding: 0.8rem 0;
             padding-right: 2rem;
@@ -273,7 +282,7 @@
             font-size: 1.05rem;
             color: #555;
         }
-
+        
         .feature-list li::before {
             content: '✓';
             position: absolute;
@@ -282,17 +291,17 @@
             font-weight: 700;
             font-size: 1.3rem;
         }
-
         /* ============ TEAM SECTION ============ */
+        
         .team-section {
             background: linear-gradient(135deg, rgba(31, 143, 163, 0.05) 0%, rgba(79, 179, 194, 0.05) 100%);
             padding: 6rem 2rem;
         }
-
+        
         .team-section .section-title {
             margin-bottom: 4rem;
         }
-
+        
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -300,7 +309,7 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-
+        
         .team-card {
             background: white;
             border-radius: 15px;
@@ -309,7 +318,7 @@
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
         }
-
+        
         .team-card::before {
             content: '';
             position: absolute;
@@ -323,47 +332,56 @@
             transition: transform 0.4s ease;
             z-index: 10;
         }
-
+        
         .team-card:hover {
             transform: translateY(-15px);
             box-shadow: 0 20px 50px rgba(31, 143, 163, 0.2);
         }
-
+        
         .team-card:hover::before {
             transform: scaleX(1);
             transform-origin: left;
         }
-
-        .team-photo {
+        /* .team-photo {
             position: relative;
-            height: 280px;
+            height: 300px;
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             overflow: hidden;
+        } */
+        
+        .team-photo {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            /* نسبة صورة بورتريه */
+            overflow: hidden;
+            /* background: #f1f5f9; */
         }
-
+        
         .team-photo img {
             width: 100%;
-            height: auto;
+            height: 100%;
             object-fit: cover;
+            display: block;
             transition: transform 0.4s ease;
         }
-
+        
         .team-card:hover .team-photo img {
             transform: scale(1.1);
         }
-
+        
         .team-info {
             padding: 2rem;
             text-align: center;
         }
-
+        
         .team-info h5 {
             font-size: 1.4rem;
             color: var(--dark);
             font-weight: 700;
             margin-bottom: 0.5rem;
         }
-
+        
         .role {
             color: var(--primary);
             font-weight: 600;
@@ -371,13 +389,13 @@
             margin-bottom: 1.5rem;
             display: block;
         }
-
+        
         .social {
             display: flex;
             justify-content: center;
             gap: 1rem;
         }
-
+        
         .social a {
             width: 45px;
             height: 45px;
@@ -392,21 +410,52 @@
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(31, 143, 163, 0.3);
         }
-
+        
         .social a:hover {
             background: var(--accent);
             transform: translateY(-5px) rotate(360deg);
             box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
         }
-
+        
+        .affiliation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+        
+        .affiliation img {
+            height: 36px;
+            /* ← أفضل قيمة */
+            width: auto;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.85;
+            transition: all 0.3s ease;
+        }
+        
+        .team-card:hover .affiliation img {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .affiliation span {
+            font-weight: 600;
+            white-space: nowrap;
+        }
         /* ============ STATS SECTION ============ */
+        
         .stats-section {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: white;
             padding: 4rem 2rem;
             margin: 3rem 0;
         }
-
+        
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -415,19 +464,19 @@
             margin: 0 auto;
             text-align: center;
         }
-
+        
         .stat-item h3 {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
         }
-
+        
         .stat-item p {
             opacity: 0.9;
             font-size: 1.1rem;
         }
-
         /* ============ FOOTER ============ */
+        
         footer {
             background: var(--dark);
             color: white;
@@ -435,125 +484,112 @@
             padding: 2rem;
             margin-top: 4rem;
         }
-
+        
         footer p {
             margin: 0.5rem 0;
             opacity: 0.9;
         }
-
         /* ============ RESPONSIVE DESIGN ============ */
+        
         @media (max-width: 768px) {
             .hero {
                 margin-top: 50px;
             }
-
             .hero h1 {
                 font-size: 2rem;
             }
-
             .about-content {
                 grid-template-columns: 1fr;
             }
-
             nav ul {
                 gap: 1.5rem;
                 font-size: 0.95rem;
             }
-
             .team-grid {
                 grid-template-columns: 1fr;
             }
-
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-
             .nav-container {
                 padding: 0 1rem;
             }
-
             .about-section,
             .team-section {
                 padding: 3rem 1rem;
             }
         }
-
         /* ============ SCROLL ANIMATIONS ============ */
+        
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 0.6s ease-out forwards;
         }
-
+        
         @keyframes fadeInUp {
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
-
-            .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: white;
-    text-decoration: none;
-}
-
-.logo img {
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .logo img {
             height: 50px;
-    transition: transform 0.3s ease;
-}
-
-.logo span {
-    color: var(--secondary);
-    letter-spacing: 0.5px;
-}
-
-.logo:hover img {
-    transform: rotate(-5deg) scale(1.05);
-}
-
-.logo:hover span {
-    color: var(--accent);
-}
-.navbar {
-    background: linear-gradient(
-        135deg,
-        rgba(15, 23, 42, 0.95),
-        rgba(15, 23, 42, 0.85)
-    );
-    backdrop-filter: blur(12px);
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.35),
-        inset 0 -1px 0 rgba(255,255,255,0.05);
-    transition: all 0.3s ease;
-}
-.navbar.scrolled {
-    padding: 0.6rem 0;
-    background: rgba(15, 23, 42, 0.98);
-}
-
-
+            transition: transform 0.3s ease;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+            letter-spacing: 0.5px;
+        }
+        
+        .logo:hover img {
+            transform: rotate(-5deg) scale(1.05);
+        }
+        
+        .logo:hover span {
+            color: var(--accent);
+        }
+        
+        .navbar {
+            background: linear-gradient( 135deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.85));
+            backdrop-filter: blur(12px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            padding: 0.6rem 0;
+            background: rgba(15, 23, 42, 0.98);
+        }
     </style>
 </head>
+
 <body>
     <!-- NAVBAR -->
-                    <nav class="navbar">
-                      <div class="nav-container">
-                        <a class="logo" href="#">
-                         <img src="/images/logo.jpg" alt="Mozn Logo">
-                         <span>مُزن S5</span>
-                        </a>
-                         <ul>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="logo" href="#">
+                <img src="/images/logo.jpg" alt="Mozn Logo">
+                <span>مُزن S5</span>
+            </a>
+            <ul>
                 <li><a href="#about">من نحن</a></li>
                 <li><a href="#team">الفريق</a></li>
                 <li><a href="#contact">التواصل</a></li>
@@ -564,7 +600,9 @@
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-content">
-            <h1>فريق مُزن  S5</h1>
+            <img src="/images/logo.jpg" alt="Mozn Logo" style="height: 100px; margin-bottom: 1rem;">
+
+            <h1>فريق مُزن S5</h1>
             <p class="lead">
                 فريق تقني يعمل على تحويل البيانات والتقنية إلى قرارات ذكية وحلول قابلة للتنفيذ
             </p>
@@ -579,8 +617,7 @@
             <div class="about-text">
                 <h3>🎯 مهمتنا</h3>
                 <p>
-                    فريق <strong>مُزن  S5</strong> هو فريق تقني متخصص في تصميم وتطوير الحلول الذكية
-                    التي تخدم التحليل، الأتمتة، والأنظمة المعتمدة على البيانات.
+                    فريق <strong>مُزن  S5</strong> هو فريق تقني متخصص في تصميم وتطوير الحلول الذكية التي تخدم التحليل، الأتمتة، والأنظمة المعتمدة على البيانات.
                 </p>
                 <p>
                     نعمل على بناء أنظمة موثوقة وقابلة للتوسع، مع تركيز عالٍ على
@@ -620,84 +657,84 @@
     </section>
 
     <!-- TEAM SECTION -->
-<!-- TEAM SECTION -->
-<section id="team" class="team-section">
-    <h2 class="section-title">فريق العمل</h2>
+    <!-- TEAM SECTION -->
+    <section id="team" class="team-section">
+        <h2 class="section-title">فريق العمل</h2>
 
-    <div class="team-grid">
+        <div class="team-grid">
 
-        <!-- Abdulrahman -->
-        <div class="team-card fade-in">
-            <div class="team-photo">
-                <img src="/images/Abdulrahman.png" alt="عبدالرحمن الكناني">
-                <span style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem;">⚙️</span>
-            </div>
+            <!-- Abdulrahman -->
+            <div class="team-card fade-in">
+                <div class="team-photo">
+                    <img src="/images/Abdulrahman.png" alt="عبدالرحمن الكناني">
+                    <span style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem;">⚙️</span>
+                </div>
 
-            <div class="team-info">
-                <h5>عبدالرحمن الكناني</h5>
-                <span class="role">قائد الفريق – الأتمتة وإنترنت الأشياء</span>
+                <div class="team-info">
+                    <h5>عبدالرحمن الكناني</h5>
+                    <span class="role">قائد الفريق – الأتمتة وإنترنت الأشياء</span>
+                    <div class="affiliation">
+                        <img src="/images/tabuk.webp" alt="KFUPM">
+                    </div>
 
-                <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;">
-                    باحث دكتوراه في علوم وهندسة الحاسب، متخصص في الأتمتة وإنترنت الأشياء
-                    والذكاء الاصطناعي. يمتلك خبرة في تصميم الأجهزة الذكية، برمجة المتحكمات،
-                    وبناء الأنظمة المتصلة المعتمدة على الشبكات.
-                </p>
+                    <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;">
+                        باحث دكتوراه في علوم وهندسة الحاسب، متخصص في الأتمتة وإنترنت الأشياء والذكاء الاصطناعي. يمتلك خبرة في تصميم الأجهزة الذكية، برمجة المتحكمات، وبناء الأنظمة المتصلة المعتمدة على الشبكات.
+                    </p>
 
-                <div class="social">
-                    <a href="https://linkedin.com/in/abdulrahman-alkinani-753323152" target="_blank" title="LinkedIn">in</a>
+                    <div class="social">
+                        <a href="https://linkedin.com/in/abdulrahman-alkinani-753323152" target="_blank" title="LinkedIn">in</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Ali -->
-        <div class="team-card fade-in">
-            <div class="team-photo">
-                <img src="/images/ALI.png" alt="علي العيسي">
-                <span style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem;">💾</span>
-            </div>
+            <!-- Ali -->
+            <div class="team-card fade-in">
+                <div class="team-photo">
+                    <img src="/images/ALI.png" alt="علي العيسي">
+                    <span style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem;">💾</span>
+                </div>
 
-            <div class="team-info">
-                <h5>علي العيسي</h5>
-                <span class="role">تطوير الأنظمة وقواعد البيانات</span>
+                <div class="team-info">
+                    <h5>علي العيسي</h5>
+                    <span class="role">تطوير الأنظمة وقواعد البيانات</span>
+                    <div class="affiliation">
+                        <img src="/images/kfupm.webp" alt="KFUPM">
+                    </div>
 
-                <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;">
-                    خريج علوم حاسب ومطور أنظمة شامل (Full-Stack)، متخصص في تطوير الأنظمة
-                    البرمجية، تصميم وإدارة قواعد البيانات، وتطبيق معايير الأمن
-                    واختبار الأنظمة لضمان الأداء والموثوقية.
-                </p>
+                    <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;">
+                        خريج علوم حاسب ومطور أنظمة شامل (Full-Stack)، متخصص في تطوير الأنظمة البرمجية، تصميم وإدارة قواعد البيانات، وتطبيق معايير الأمن واختبار الأنظمة لضمان الأداء والموثوقية.
+                    </p>
 
-                <div class="social">
-                   <a href="https://www.linkedin.com/in/ali-aleissi" target="_blank" title="LinkedIn">in</a>
-                       <a href="https://alialeissi.site" target="_blank" title="Portfolio">🌐</a>
-                 </div>
-            </div>
-        </div>
-
-        <!-- Nawaf -->
-        <div class="team-card fade-in">
-            <div class="team-photo">
-                <img src="/images/NAWAF.png" alt="نواف الحربي">
-                <span style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem;">🔬</span>
-            </div>
-
-            <div class="team-info">
-                <h5>نواف الحربي</h5>
-                <span class="role">اختبار خصائص المواد والأمن والسلامة</span>
-
-                <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;">
-                    طالب بكالوريوس في تخصص الكيمياء العامة، مهتم بدراسة خصائص المواد
-                    وتطبيق معايير الأمن والسلامة، ويشارك في اختبار الأجهزة
-                    والأنظمة لضمان توافقها مع المتطلبات الفنية.
-                </p>
-
-                <div class="social">
-                    <a href="#" title="LinkedIn">in</a>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/ali-aleissi" target="_blank" title="LinkedIn">in</a>
+                        <a href="https://alialeissi.site" target="_blank" title="Portfolio">🌐</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
-</section>
+            <!-- Nawaf -->
+            <div class="team-card fade-in">
+                <div class="team-photo">
+                    <img src="/images/NAWAF.png" alt="نواف الحربي">
+                    <span style="display: flex; align-items: center; justify-content: center; height: 100%; font-size: 4rem;">🔬</span>
+                </div>
+
+                <div class="team-info">
+                    <h5>نواف الحربي</h5>
+                    <span class="role">اختبار خصائص المواد والأمن والسلامة</span>
+
+                    <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;">
+                        طالب بكالوريوس في تخصص الكيمياء العامة، مهتم بدراسة خصائص المواد وتطبيق معايير الأمن والسلامة، ويشارك في اختبار الأجهزة والأنظمة لضمان توافقها مع المتطلبات الفنية.
+                    </p>
+
+                    <div class="social">
+                        <a href="#" title="LinkedIn">in</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="about-section" style="text-align: center;">
@@ -717,7 +754,7 @@
     <script>
         // Smooth scroll behavior for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
@@ -743,15 +780,16 @@
             observer.observe(card);
         });
 
-         const navbar = document.querySelector('.navbar');
+        const navbar = document.querySelector('.navbar');
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
     </script>
 </body>
+
 </html>
