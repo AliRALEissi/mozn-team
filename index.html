@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="/images/logo.PNG" type="image/x-icon">
     <title>فريق مُزن S5 | من نحن</title>
     <style>
@@ -428,8 +431,7 @@
         }
         
         .affiliation img {
-            height: 36px;
-            /* ← أفضل قيمة */
+            height: 70px;
             width: auto;
             object-fit: contain;
             filter: grayscale(100%);
@@ -442,7 +444,9 @@
             opacity: 1;
             transform: scale(1.1);
         }
-        
+        .affiliation img#T {
+            height: 40px;
+        }
         .affiliation span {
             font-weight: 600;
             white-space: nowrap;
@@ -578,6 +582,55 @@
             padding: 0.6rem 0;
             background: rgba(15, 23, 42, 0.98);
         }
+       .social a {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    transition: all 0.35s ease;
+box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* LinkedIn */
+.social a[title="LinkedIn"] {
+    background: #0077b5;
+}
+
+/* WhatsApp */
+.social a[title="WhatsApp"] {
+    background: #25D366;
+}
+
+/* Call */
+.social a[title="اتصال"] {
+    background: #0f172a;
+}
+
+/* Portfolio */
+.social a[title="Portfolio"] {
+    background: var(--primary);
+}
+
+.social a:hover {
+    transform: translateY(-6px) scale(1.12);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.team-photo {
+    position: relative;
+}
+
+
+.team-card:hover .social {
+    bottom: 20px;
+}
+
+
     </style>
 </head>
 
@@ -674,16 +727,29 @@
                     <h5>عبدالرحمن الكناني</h5>
                     <span class="role">قائد الفريق – الأتمتة وإنترنت الأشياء</span>
                     <div class="affiliation">
-                        <img src="/images/tabuk.webp" alt="tabuk">
+                        
+                        <img id="T" src="/images/tabuk.webp" alt="tabuk">
                     </div>
 
                     <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;">
-                        باحث دكتوراه في علوم وهندسة الحاسب، متخصص في الأتمتة وإنترنت الأشياء والذكاء الاصطناعي. يمتلك خبرة في تصميم الأجهزة الذكية، برمجة المتحكمات، وبناء الأنظمة المتصلة المعتمدة على الشبكات.
+                        باحث  في علوم وهندسة الحاسب، متخصص في الأتمتة وإنترنت الأشياء والذكاء الاصطناعي. يمتلك خبرة في تصميم الأجهزة الذكية، برمجة المتحكمات، وبناء الأنظمة المتصلة المعتمدة على الشبكات.
                     </p>
 
-                    <div class="social">
-                        <a href="https://linkedin.com/in/abdulrahman-alkinani-753323152" target="_blank" title="LinkedIn">in</a>
-                    </div>
+                   <div class="social">
+    <a href="https://linkedin.com/in/abdulrahman-alkinani-753323152" target="_blank" title="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="tel:+966536866747" title="اتصال">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a href="https://wa.me/966536866747" target="_blank" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</div>
+
+
                 </div>
             </div>
 
@@ -702,13 +768,27 @@
                     </div>
 
                     <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;">
-                        خريج علوم حاسب ومطور أنظمة شامل (Full-Stack)، متخصص في تطوير الأنظمة البرمجية، تصميم وإدارة قواعد البيانات، وتطبيق معايير الأمن واختبار الأنظمة لضمان الأداء والموثوقية.
+                        مهندس تقنية معلومات في جامعة الملك فهد للبترول والمعادن ومطور أنظمة شامل (Full-Stack)، متخصص في تطوير الأنظمة البرمجية، تصميم وإدارة قواعد البيانات، وتطبيق معايير الأمن واختبار الأنظمة لضمان الأداء والموثوقية.
                     </p>
 
-                    <div class="social">
-                        <a href="https://www.linkedin.com/in/ali-aleissi" target="_blank" title="LinkedIn">in</a>
-                        <a href="https://alialeissi.site" target="_blank" title="Portfolio">🌐</a>
-                    </div>
+                   <div class="social">
+    <a href="https://www.linkedin.com/in/ali-aleissi" target="_blank" title="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="tel:+966581590317" title="اتصال">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a href="https://wa.me/966581590317" target="_blank" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="https://alialeissi.site" target="_blank" title="Portfolio">
+        <i class="fa-solid fa-globe"></i>
+    </a>
+</div>
+
                 </div>
             </div>
 
@@ -727,12 +807,23 @@
                     </div>
 
                     <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem;">
-                        طالب بكالوريوس في تخصص الكيمياء العامة، مهتم بدراسة خصائص المواد وتطبيق معايير الأمن والسلامة، ويشارك في اختبار الأجهزة والأنظمة لضمان توافقها مع المتطلبات الفنية.
+                        خريج بكالوريوس في تخصص الكيمياء العامة، مهتم بدراسة خصائص المواد وتطبيق معايير الأمن والسلامة، ويشارك في اختبار الأجهزة والأنظمة لضمان توافقها مع المتطلبات الفنية.
                     </p>
 
                     <div class="social">
-                        <a href="#" title="LinkedIn">in</a>
-                    </div>
+    <a href="#" target="_blank" title="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="tel:+966560780504" title="اتصال">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a href="https://wa.me/966560780504" target="_blank" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</div>
+
                 </div>
             </div>
 
